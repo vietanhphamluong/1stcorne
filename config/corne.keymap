@@ -9,44 +9,18 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-        behaviors {
-                hml: home_row_mod_left {
-                        compatible = "zmk,behavior-hold-tap";
-                        #binding-cells = <2>;
-                        flavor = "balanced";
-                        tapping-term-ms = <160>;
-                        quick-tap-ms = <175>;
-                        require-prior-idle-ms = <200>;
-                        bindings = <&kp>, <&kp>;
-                        // right-hand keys + all thumbs
-                        hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>;
-                };
-
-                hmr: home_row_mod_right {
-                        compatible = "zmk,behavior-hold-tap";
-                        #binding-cells = <2>;
-                        flavor = "balanced";
-                        tapping-term-ms = <160>;
-                        quick-tap-ms = <175>;
-                        require-prior-idle-ms = <200>;
-                        bindings = <&kp>, <&kp>;
-                        // left-hand keys + all thumbs
-                        hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
-                };
-        };
-
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  '  |  ,  |  .  |  P  |  Y  |   |  F  |  G   |  C  |  R  |  L  |  /   |
-// | CTRL | A/⌘ | O/⌥ | E/⇧ | U/⌃ |  I  |   |  D  | H/⌃  | T/⇧ | N/⌥ | S/⌘ | ENT  |
+// | CTRL |  A  |  O  |  E  |  U  |  I  |   |  D  |  H   |  T  |  N  |  S  | ENT  |
 // | SHFT |  ;  |  Q  |  J  |  K  |  X  |   |  B  |  M   |  W  |  V  |  Z  | SHFT |
 //                    | GUI | LWR | BSPC|   | SPC | RSE  | GUI |
                         bindings = <
-   &kp TAB   &kp SQT       &kp COMMA   &kp DOT      &kp P        &kp Y   &kp F &kp G        &kp C        &kp R       &kp L        &kp FSLH
-   &kp LCTRL &hml LGUI A   &hml LALT O &hml LSHFT E &hml LCTRL U &kp I   &kp D &hmr RCTRL H &hmr RSHFT T &hmr RALT N &hmr RGUI S  &kp RET
+   &kp TAB   &kp SQT  &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G  &kp C &kp R &kp L     &kp FSLH
+   &kp LCTRL &kp A    &kp O     &kp E   &kp U &kp I   &kp D &kp H  &kp T &kp N &kp S     &kp RET
    &kp LSHFT &kp SEMI &kp Q     &kp J   &kp K &kp X   &kp B &kp M  &kp W &kp V &kp Z     &kp RSHFT
                             &kp LGUI &mo 1 &kp BSPC   &kp SPACE &mo 2 &kp RGUI
                         >;

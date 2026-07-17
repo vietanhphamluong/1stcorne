@@ -18,6 +18,12 @@
    //                 };
    //     };
    // then use &parens instead of &kp ...
+   macros {
+                tmux: tmux {
+                        compatible   = "zmk, behavior-macro";
+                        bindings     = <&kp LCTRL &kp A>;
+                };
+   };
         keymap {
                 compatible                 = "zmk,keymap";
 
@@ -28,10 +34,10 @@
 // | SHFT |  '  |  Q  |  J  |  K  |  X  |   |  B  |  M   |  W  |  V  |  Z  | SHFT |
 //                    | GUI | LWR | BSPC|   | SPC | RSE  | GUI |
                         bindings = <
-   &kp TAB   &kp SEMI  &kp COMMA &kp DOT &kp P &kp Y   &kp F &kp G  &kp C &kp R &kp L     &kp FSLH
-   &kp LCTRL &kp A    &kp O     &kp E   &kp U &kp I   &kp D &kp H  &kp T &kp N &kp S     &kp RET
-   &kp LSHFT &kp SQT &kp Q     &kp J   &kp K &kp X   &kp B &kp M  &kp W &kp V &kp Z     &kp RSHFT
-                            &kp LGUI &mo 1 &kp BSPC   &kp SPACE &mo 2 &kp RGUI
+   &kp TAB   &kp SEMI  &kp COMMA &kp DOT &kp P &kp Y         &kp F &kp G  &kp C &kp R &kp L     &kp FSLH
+   &kp LCTRL &kp A     &kp O     &kp E   &kp U &kp I         &kp D &kp H  &kp T &kp N &kp S     &kp RET
+   &kp LSHFT &kp SQT   &kp Q     &kp J   &kp K &kp X         &kp B &kp M  &kp W &kp V &kp Z     &kp RSHFT
+                    &kp LGUI &mo 1 &kp BSPC                  &kp SPACE &mo 2 &kp RGUI
                         >;
                 };
                 lower_layer {
@@ -63,15 +69,15 @@
 //                };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  [  |  {  |  (  |  %  |   |  &  |  )  |  }  |  ]  |  *  |  @   |
-// | CTRL |     |     |  -  |  *  |  \  |   |  #  |  =  |  +  |  ^  |     |  `   |
+// |  TAB |  !  |  [  |  {  |  (  |  %  |   |  &  |  )  |  }  |  ]  |     |  @   |
+// | CTRL | tmux|     |  -  |  *  |  \  |   |  #  |  =  |  +  |  ^  |     |  `   |
 // | SHFT |     |     |  _  |     | "|" |   |     |     |  $  |     |     |  ~   |
 //                    | BSPC|     | GUI |   | ENT |     | SPC |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp LBKT &kp LBRC  &kp LPAR  &kp PRCNT   &kp AMPS &kp RPAR  &kp RBRC &kp RBKT &trans &kp AT
-   &kp LCTRL &trans   &trans &kp MINUS  &kp ASTRK  &kp BSLH    &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &kp GRAVE
-   &kp LSHFT &trans   &trans &kp UNDER  &trans  &kp PIPE    &trans &trans  &kp DLLR    &trans   &trans   &kp TILDE
-                             &kp BSPC &trans   &kp LGUI    &kp RET &trans    &kp SPACE
+   &kp  TAB  &kp EXCL &kp LBKT &kp LBRC  &kp LPAR  &kp PRCNT        &kp AMPS &kp RPAR  &kp RBRC &kp RBKT &trans &kp AT
+   &kp LCTRL &tmux   &trans   &kp MINUS &kp ASTRK  &kp BSLH        &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &kp GRAVE
+   &kp LSHFT &trans   &trans &kp UNDER  &trans  &kp PIPE            &trans &trans  &kp DLLR    &trans   &trans   &kp TILDE
+                             &kp BSPC &trans   &kp LGUI             &kp RET &trans    &kp SPACE
                         >;
                 };
         };

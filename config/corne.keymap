@@ -10,20 +10,13 @@
 
 / {
 
-   // macros {
-   //                 parens: parens {
-   //                         compatible     = "zmk,behavior-macro";
-   //                         #binding-cells = <0>;
-   //                         bindings       = <&kp LPAR &kp RPAR>;
-   //                 };
-   //     };
-   // then use &parens instead of &kp ...
-   macros {
-                tmux: tmux {
-                        compatible   = "zmk, behavior-macro";
-                        bindings     = <&kp LCTRL &kp A>;
-                };
-   };
+   /* macros { */
+   /*              tmux: tmux { */
+   /*                      compatible     = "zmk,behavior-macro"; */
+   /*                      #binding-cells = <0>; */
+   /*                      bindings       = <&kp LC(A)>; */
+   /*              }; */
+   /* }; */
         keymap {
                 compatible                 = "zmk,keymap";
 
@@ -75,7 +68,7 @@
 //                    | BSPC|     | GUI |   | ENT |     | SPC |
                         bindings = <
    &kp  TAB  &kp EXCL &kp LBKT &kp LBRC  &kp LPAR  &kp PRCNT        &kp AMPS &kp RPAR  &kp RBRC &kp RBKT &trans &kp AT
-   &kp LCTRL &tmux   &trans   &kp MINUS &kp ASTRK  &kp BSLH        &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &kp GRAVE
+   &kp LCTRL &kp LC(A)   &trans   &kp MINUS &kp ASTRK  &kp BSLH        &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &kp GRAVE
    &kp LSHFT &trans   &trans &kp UNDER  &trans  &kp PIPE            &trans &trans  &kp DLLR    &trans   &trans   &kp TILDE
                              &kp BSPC &trans   &kp LGUI             &kp RET &trans    &kp SPACE
                         >;

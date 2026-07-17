@@ -63,14 +63,14 @@
 //                };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  +  |  [  |  {  |  (  |  &  |   |  =  |  )  |  }  |  ]  |  *  |  !   |
-// | CTRL |     |  %  |  -  |  $  |  \  |   |  !  |  #  |  @  |  ^  |     |  `   |
-// | SHFT |     |     |  _  |     | "|" |   |     |     |     |     |     |  ~   |
+// |  TAB |  !  |  [  |  {  |  (  |  &  |   |  =  |  )  |  }  |  ]  |  *  |  @   |
+// | CTRL |     |     |  -  |  $  |  \  |   |  #  |  %  |  +  |  ^  |     |  `   |
+// | SHFT |     |     |  _  |     | "|" |   |     |     |  *  |     |     |  ~   |
 //                    | BSPC|     | GUI |   | ENT |     | SPC |
                         bindings = <
-   &kp  TAB  &kp PLUS &kp LBKT &kp LBRC  &kp LPAR  &kp AMPS   &kp EQUAL &kp RPAR  &kp RBRC &kp RBKT &kp ASTRK &kp EXCL
-   &kp LCTRL &trans   &kp PRCNT &kp MINUS  &kp DLLR  &kp BSLH    &kp EXCL &kp HASH &kp AT    &kp CARET   &trans   &kp GRAVE
-   &kp LSHFT &trans   &trans &kp UNDER  &trans  &kp PIPE    &trans &trans  &trans    &trans   &trans   &kp TILDE
+   &kp  TAB  &kp EXCL &kp LBKT &kp LBRC  &kp LPAR  &kp AMPS   &kp EQUAL &kp RPAR  &kp RBRC &kp RBKT &trans &kp AT
+   &kp LCTRL &trans   &trans &kp MINUS  &kp DLLR  &kp BSLH    &kp HASH &kp PRCNT &kp PLUS    &kp CARET   &trans   &kp GRAVE
+   &kp LSHFT &trans   &trans &kp UNDER  &trans  &kp PIPE    &trans &trans  &kp ASTRK    &trans   &trans   &kp TILDE
                              &kp BSPC &trans   &kp LGUI    &kp RET &trans    &kp SPACE
                         >;
                 };

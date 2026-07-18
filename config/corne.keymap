@@ -68,12 +68,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  [  |  {  |  (  |  %  |   |  &  |  )  |  }  |  ]  |     |  @   |
-// | CTRL | tmux|     |  -  |  *  |  \  |   |  #  |  =  |  +  |  ^  |     |  `   |
+// | CTRL | tmux|CAPS |  -  |  *  |  \  |   |  #  |  =  |  +  |  ^  |     |  `   |
 // | SHFT |     |     |  _  |     | "|" |   |     |     |  $  |     |     |  ~   |
 //                    | BSPC|     | GUI |   | ENT |     | SPC |
                         bindings = <
    &kp  TAB  &kp EXCL &kp LBKT &kp LBRC  &kp LPAR  &kp PRCNT        &kp AMPS &kp RPAR  &kp RBRC &kp RBKT &trans &kp AT
-   &kp LCTRL &kp LC(A)   &trans   &kp MINUS &kp ASTRK  &kp BSLH        &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &kp GRAVE
+   &kp LCTRL &kp LC(A)   &kp CAPS   &kp MINUS &kp ASTRK  &kp BSLH        &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &kp GRAVE
    &kp LSHFT &trans   &trans &kp UNDER  &trans  &kp PIPE            &trans &trans  &kp DLLR    &trans   &trans   &kp TILDE
                              &kp BSPC &trans   &kp LGUI             &kp RET &trans    &kp SPACE
                         >;

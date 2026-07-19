@@ -57,13 +57,14 @@
 // |  TAB |  !  |  [  |  {  |  (  |  %  |   |  &  |  )  |  }  |  ]  |     |      |
 // | CTRL | tmux|     |  -  |  *  |  \  |   |  #  |  =  |  +  |  ^  |     |      |
 // | SHFT |     |     |  _  |  /  | "|" |   |     |  @  |  $  |     |     |      |
-//                    | BSPC|     | GUI |   | ENT |     | SPC |
+//                    | BSPC|     | DEL |   | ENT |     | SPC |
                         bindings = <
    &kp  TAB  &kp EXCL &kp LBKT &kp LBRC  &kp LPAR  &kp PRCNT        &kp AMPS &kp RPAR  &kp RBRC &kp RBKT &trans &trans
    &kp LCTRL &kp LC(A)   &caps_word   &kp MINUS &kp ASTRK  &kp BSLH        &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &trans
    &kp LSHFT &trans   &trans &kp UNDER  &kp FSLH  &kp PIPE            &kp QMARK &kp AT  &kp DLLR    &trans   &trans   &trans
-                             &kp BSPC &trans   &kp LGUI             &kp RET &trans    &kp SPACE
+                             &kp BSPC &trans   &kp DEL             &kp RET &trans    &kp SPACE
                         >;
                 };
         };
 };
+

@@ -45,12 +45,17 @@
                         bindings       = <&kp LC(A) &kp P>;
                 };
    };
+/* | 0 TAB | 1 ;  | 2 ,  | 3 .  | 4 P  | 5 Y  |   | 6 F  | 7 G  | 8 C  | 9 R  |10 L  |11 `   | */
+/* |12 CTRL|13 A  |14 O  |15 E  |16 U  |17 I  |   |18 D  |19 H  |20 T  |21 N  |22 S  |23 tmux| */
+/* |24 SHFT|25 '  |26 Q  |27 J  |28 K  |29 X  |   |30 B  |31 M  |32 W  |33 V  |34 Z  |35 SHFT| */
+/*                 |36 DEL|37 LWR|38 BSPC|  |39 SPC|40 RSE|41 ENT| */
    combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_ctl {
             timeout-ms = <50>;
             key-positions = <19 20>;
             bindings = <&kp CTRL>;
+            slow-release;
         };
     };
         keymap {

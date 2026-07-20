@@ -33,7 +33,7 @@
         hsl: home_row_shift_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preffered";
+            flavor = "balanced";
             require-prior-idle-ms = <100>;
             tapping-term-ms = <250>;
             quick-tap-ms = <175>;
@@ -124,7 +124,7 @@
    &kp  ESC  &kp EXCL &kp LBKT &kp LBRC  &kp LPAR  &kp PRCNT        &kp AMPS &kp RPAR  &kp RBRC &kp RBKT &trans &trans
    &kp LCTRL &kp LC(A)   &caps_word   &kp MINUS &kp ASTRK  &kp BSLH        &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &trans
    &kp LSHFT &kp PG_UP   &kp PG_DN &kp UNDER  &kp FSLH  &kp PIPE            &kp QMARK &kp AT  &kp DLLR    &trans   &trans   &trans
-                             &kp BSPC &trans   &kp DEL             &kp RET &trans    &kp SPAC
+                             &kp BSPC &trans   &kp DEL             &kp RET &trans    &kp SPACE
                         >;
                 };
         };

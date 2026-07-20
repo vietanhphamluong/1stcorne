@@ -99,7 +99,7 @@
 //                    | DEL | LWR | BSPC|   | SPC | RSE  | ENT |
                         bindings = <
    &kp TAB   &kp SEMI  &kp COMMA &kp DOT &kp P &kp Y         &kp F &kp G  &kp C &kp R &kp L     &kp GRAVE
-   &kp LCTRL &kp A     &kp O     &hml LCTRL E   &hsl LSHFT U &kp I         &kp D &hsr RSHFT H  &hmr CTRL T &kp N &kp S     &kp LC(A)
+   &kp LCTRL &kp A     &kp O     &hml LCTRL E   &hsl LSHFT U &kp I         &kp D &hsr RSHFT H  &hmr RCTRL T &kp N &kp S     &kp LC(A)
    &kp LSHFT &hml LGUI SQT   &kp Q     &kp J   &kp K &kp X         &kp B &kp M  &kp W &kp V &hmr RGUI Z     &kp RSHFT
                     &kp DEL &mo 1 &kp BSPC                  &kp SPACE &mo 2 &kp RET
                         >;

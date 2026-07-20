@@ -51,10 +51,16 @@
 /*                 |36 DEL|37 LWR|38 BSPC|  |39 SPC|40 RSE|41 ENT| */
    combos {
         compatible = "zmk,combos";
-        combo_ctl {
-            timeout-ms = <50>;
+        combo_rshft {
+            timeout-ms = <20>;
             key-positions = <19 20>;
-            bindings = <&kp LCTRL>;
+            bindings = <&kp RSHFT>;
+            slow-release;
+        };
+        combo_lshft {
+            timeout-ms = <20>;
+            key-positions = <15 16>;
+            bindings = <&kp RSHFT>;
             slow-release;
         };
     };

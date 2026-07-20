@@ -127,7 +127,7 @@
                         bindings = <
    &kp  ESC  &kp EXCL &kp LBKT &kp LBRC  &kp LPAR  &kp PRCNT        &kp AMPS &kp RPAR  &kp RBRC &kp RBKT &trans &trans
    &kp LCTRL &kp LC(A)   &caps_word   &kp MINUS &kp ASTRK  &kp BSLH        &kp HASH &kp EQUAL &kp PLUS    &kp CARET   &trans   &trans
-   &kp LSHFT &trans   &trans &kp UNDER  &kp FSLH  &kp PIPE            &kp QMARK &kp AT  &kp DLLR    &trans   &trans   &trans
+   &kp LSHFT &kp PG_UP   &kp PG_DN &kp UNDER  &kp FSLH  &kp PIPE            &kp QMARK &kp AT  &kp DLLR    &trans   &trans   &trans
                              &kp BSPC &trans   &kp DEL             &kp RET &trans    &kp SPACE
                         >;
                 };

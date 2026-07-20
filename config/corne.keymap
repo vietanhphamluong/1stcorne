@@ -54,7 +54,7 @@
         combo_ctl {
             timeout-ms = <50>;
             key-positions = <19 20>;
-            bindings = <&kp CTRL>;
+            bindings = <&kp LCTRL>;
             slow-release;
         };
     };

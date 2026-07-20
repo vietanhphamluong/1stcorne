@@ -44,7 +44,7 @@
                         #binding-cells = <0>;
                         bindings       = <&kp LC(A) &kp P>;
                 };
-   }
+   };
    combos {
         compatible = "zmk,combos";
         combo_esc {

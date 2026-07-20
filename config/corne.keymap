@@ -49,23 +49,23 @@
 /* |12 CTRL|13 A  |14 O  |15 E  |16 U  |17 I  |   |18 D  |19 H  |20 T  |21 N  |22 S  |23 tmux| */
 /* |24 SHFT|25 '  |26 Q  |27 J  |28 K  |29 X  |   |30 B  |31 M  |32 W  |33 V  |34 Z  |35 SHFT| */
 /*                 |36 DEL|37 LWR|38 BSPC|  |39 SPC|40 RSE|41 ENT| */
-   combos {
-        compatible = "zmk,combos";
-        combo_rshft {
-            timeout-ms = <40>;
-            key-positions = <19 20>;
-            bindings = <&kp RSHFT>;
-            require-prior-idle-ms = <100>;
-            slow-release;
-        };
-        combo_lshft {
-            timeout-ms = <40>;
-            key-positions = <15 16>;
-            bindings = <&kp RSHFT>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-        };
-    };
+   /* combos { */
+   /*      compatible = "zmk,combos"; */
+   /*      combo_rshft { */
+   /*          timeout-ms = <40>; */
+   /*          key-positions = <19 20>; */
+   /*          bindings = <&kp RSHFT>; */
+   /*          require-prior-idle-ms = <100>; */
+   /*          slow-release; */
+   /*      }; */
+   /*      combo_lshft { */
+   /*          timeout-ms = <40>; */
+   /*          key-positions = <15 16>; */
+   /*          bindings = <&kp RSHFT>; */
+   /*          slow-release; */
+   /*          require-prior-idle-ms = <100>; */
+   /*      }; */
+   /*  }; */
         keymap {
                 compatible                 = "zmk,keymap";
 
@@ -77,7 +77,7 @@
 //                    | DEL | LWR | BSPC|   | SPC | RSE  | ENT |
                         bindings = <
    &kp TAB   &kp SEMI  &kp COMMA &kp DOT &kp P &kp Y         &kp F &kp G  &kp C &kp R &kp L     &kp GRAVE
-   &kp LCTRL &kp A     &kp O     &kp E   &kp U &kp I         &kp D &kp H  &kp T &kp N &kp S     &kp LC(A)
+   &kp LCTRL &kp A     &kp O     &hml LCTRL E   &hml LSHFT U &kp I         &kp D &hmr RSHFT H  &hmr CTRL T &kp N &kp S     &kp LC(A)
    &kp LSHFT &hml LGUI SQT   &kp Q     &kp J   &kp K &kp X         &kp B &kp M  &kp W &kp V &hmr RGUI Z     &kp RSHFT
                     &kp DEL &mo 1 &kp BSPC                  &kp SPACE &mo 2 &kp RET
                         >;

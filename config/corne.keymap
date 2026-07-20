@@ -52,16 +52,18 @@
    combos {
         compatible = "zmk,combos";
         combo_rshft {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <19 20>;
             bindings = <&kp RSHFT>;
+            require-prior-idle-ms = <100>;
             slow-release;
         };
         combo_lshft {
-            timeout-ms = <50>;
+            timeout-ms = <40>;
             key-positions = <15 16>;
             bindings = <&kp RSHFT>;
             slow-release;
+            require-prior-idle-ms = <100>;
         };
     };
         keymap {
